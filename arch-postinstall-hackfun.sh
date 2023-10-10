@@ -25,5 +25,12 @@ echo "Eliminando paquetes obsoletos..."
 yay -Yc
 
 echo ""
+echo "Personalizando..."
+mkdir $HOME/Imágenes
+cp assets/hackfun-ciudad.jpg $HOME/Imágenes/
+cp assets/hackfun-teclas.jpg $HOME/Imágenes/
+gsettings set org.mate.background picture-filename "$HOME/Imágenes/hackfun-ciudad.jpg"
+
+echo ""
 echo "Finalizado"
 echo ""
