@@ -29,16 +29,28 @@ echo "Reinstalando aplicaciones desde installed-aur.txt..."
 sudo yay -S $(cat installed-aur.txt) --noconfirm
 
 echo ""
-echo "Eliminando paquetes huérfanos..."
-yay -Yc
-
-echo ""
 echo "Configurando estilos y fuentes..."
-yay -S ttf-ms-win11-auto --noconfirm
+
+# Fuentes varias
+yay -S adobe-source-sans-pro-fonts ttf-dejavu ttf-opensans noto-fonts freetype2 terminus-font ttf-bitstream-vera ttf-dejavu ttf-droid ttf-fira-mono ttf-fira-sans ttf-freefont ttf-inconsolata ttf-liberation libertinus-font
+
+# MS Fonts
+yay -S ttf-ms-fonts --noconfirm
+
+# MacOS Fonts
+yay -S otf-san-francisco otf-san-francisco-mono
+
+# Configuracion global de estilos
 sudo ln -s ~/.themes/* /usr/share/themes/
 sudo ln -s ~/.icons/* /usr/share/icons/
 sudo ln -s ~/.fonts/* /usr/share/fonts/
 
+# nano syntax highlighting
+yay -S nano-syntax-highlighting
+
+echo ""
+echo "Eliminando paquetes huérfanos..."
+yay -Yc
 
 echo ""
 echo "Finalizado"
