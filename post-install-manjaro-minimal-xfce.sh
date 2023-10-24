@@ -32,21 +32,28 @@ echo ""
 echo "Configurando estilos y fuentes..."
 
 # Fuentes varias
-yay -S adobe-source-sans-pro-fonts ttf-dejavu ttf-opensans noto-fonts freetype2 terminus-font ttf-bitstream-vera ttf-dejavu ttf-droid ttf-fira-mono ttf-fira-sans ttf-freefont ttf-inconsolata ttf-liberation libertinus-font
+yay -S adobe-source-sans-pro-fonts ttf-dejavu ttf-opensans noto-fonts freetype2 terminus-font ttf-bitstream-vera ttf-dejavu ttf-droid ttf-fira-mono ttf-fira-sans ttf-freefont ttf-inconsolata ttf-liberation libertinus-font --noconfirm
 
 # MS Fonts
 yay -S ttf-ms-fonts --noconfirm
 
 # MacOS Fonts
-yay -S otf-san-francisco otf-san-francisco-mono
+yay -S otf-san-francisco otf-san-francisco-mono --noconfirm
 
 # Configuracion global de estilos
 sudo ln -s ~/.themes/* /usr/share/themes/
 sudo ln -s ~/.icons/* /usr/share/icons/
 sudo ln -s ~/.fonts/* /usr/share/fonts/
 
+echo ""
+echo "Aplicando tweaks..."
+
 # nano syntax highlighting
-yay -S nano-syntax-highlighting
+yay -S nano-syntax-highlighting --noconfirm
+
+# git
+git config --global credential.helper store
+git config --global credeantial.helper cache
 
 echo ""
 echo "Eliminando paquetes huérfanos..."
