@@ -32,6 +32,11 @@ echo ""
 echo "Eliminando paquetes huérfanos..."
 yay -Yc
 
+echo ""
+echo "Configurando estilos..."
+# https://www.xfce-look.org/p/1441725
+sudo ln -s ~/.themes/* /usr/share/themes/
+sudo ln -s ~/.icons/* /usr/share/icons/
 
 echo ""
 echo "Finalizado"
