@@ -33,10 +33,12 @@ echo "Eliminando paquetes huérfanos..."
 yay -Yc
 
 echo ""
-echo "Configurando estilos..."
-# https://www.xfce-look.org/p/1441725
+echo "Configurando estilos y fuentes..."
+yay -S ttf-ms-win11-auto --noconfirm
 sudo ln -s ~/.themes/* /usr/share/themes/
 sudo ln -s ~/.icons/* /usr/share/icons/
+sudo ln -s ~/.fonts/* /usr/share/fonts/
+
 
 echo ""
 echo "Finalizado"
