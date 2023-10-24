@@ -12,12 +12,15 @@ echo "Instalando yay..."
 sudo pacman -S yay --noconfirm
 
 echo ""
+echo "Instalando plugins de flatpak y snap de pamac..."
+sudo pacman -S  libpamac-flatpak-plugin libpamac-snap-plugin --noconfirm
+
+echo ""
 #echo "Instalando aplicaciones comnues (repos oficiales)..."
 # curl -sS https://download.spotify.com/debian/pubkey_0D811D58.gpg | gpg --import -
 #sudo pacman -S firefox bitwarden chromium backintime flameshot veracrypt --noconfirm
 echo "Reinstalando aplicaciones desde installed.txt..."
 sudo pacman -S $(cat install.txt) --noconfirm
-
 
 echo ""
 #echo "Instalando aplicaciones extra (AUR)..."
