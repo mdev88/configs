@@ -10,7 +10,7 @@ CHROME_EXECUTABLE="/usr/bin/chromium"
 
 # Git
 alias gitl='git log --pretty=oneline'
-alias gitll="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cD) %C(bold blue)<%an>%Creset' --abbrev-commi>
+alias gitll="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cD) %C(bold blue)<%an>%Creset' --abbrev-commit --all"
 alias gitlp='git log -p'
 
 ## Show current git branch in prompt
