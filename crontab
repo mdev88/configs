@@ -1,0 +1,5 @@
+# Crea listado de archivos instalados de los repositorios oficiales
+45 11 * * * /usr/bin/comm -12 <(grep -Poe '\[ALPM\] installed \K\S*' /var/log/pacman.log | sort | uniq) <(pacman -Qeqn | sort) > /home/user/installed.txt
+
+# Crea listado de archivos instalados de AUR
+46 11 * * * /usr/bin/comm -12 <(grep -Poe '\[ALPM\] installed \K\S*' /var/log/pacman.log | sort | uniq) <(pacman -Qeqm | sort) > /home/user/installed-aur.txt
