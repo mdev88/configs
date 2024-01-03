@@ -53,24 +53,27 @@
         <Class>Xfce4-terminal</Class>
         <Option>maximized</Option>
     </Group>
+    <Group>
+        <Class>Navigator</Class>
+        <Option>maximized</Option>
+    </Group>
 
     <!-- Tray at the bottom. -->
     <Tray x="0" y="-1" autohide="off" delay="1000">
 
-        <TrayButton label="JWM">root:1</TrayButton>
+        <TrayButton label="Apps">root:1</TrayButton>
         <Spacer width="2"/>
-        <TrayButton label="_">showdesktop</TrayButton>
+        <TrayButton label="Desk">showdesktop</TrayButton>
         <Spacer width="2"/>
 
-        <Pager labeled="true"/>
+        <TaskList maxwidth="200"/>
 
-        <TaskList maxwidth="256"/>
-
-        <!--<Swallow width="32" height="32" name="xclock">xclock</Swallow>-->
+        <!-- <Swallow width="32" height="32" name="xclock">xclock</Swallow>-->
 
         <Dock/>
+        <TrayButton popup="Volumen" icon="/home/user/Images/mixer2.png">exec:xterm mixertui</TrayButton>
         <Clock format="%l:%M %p"><Button mask="123">exec:xclock</Button></Clock>
-
+	<Pager labeled="true"/>
     </Tray>
 
     <!-- Visual Styles -->
