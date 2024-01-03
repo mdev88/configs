@@ -49,6 +49,10 @@
         <Option>drag</Option>
         <Option>notitle</Option>
     </Group>
+    <Group>
+        <Class>Xfce4-terminal</Class>
+        <Option>maximized</Option>
+    </Group>
 
     <!-- Tray at the bottom. -->
     <Tray x="0" y="-1" autohide="off" delay="1000">
@@ -178,38 +182,6 @@
 
     <!-- The move mode (outline or opaque) -->
     <MoveMode>opaque</MoveMode>
-
-    <IconPath>
-      /usr/local/share/icons/Luv/scalable/actions
-    </IconPath>
-    <IconPath>
-      /usr/local/share/icons/Luv/scalable/apps
-    </IconPath>
-    <IconPath>
-      /usr/local/share/icons/Luv/scalable/places
-    </IconPath>
-    <IconPath>
-      /usr/local/share/icons/Luv/scalable/status
-    </IconPath>
-    <IconPath>
-      /usr/local/share/icons/Luv/scalable/mimetypes
-    </IconPath>
-
-    <IconPath>
-      /usr/local/share/icons/Luv/scalable/actions
-    </IconPath>
-    <IconPath>
-      /usr/local/share/icons/Luv/scalable/apps
-    </IconPath>
-    <IconPath>
-      /usr/local/share/icons/Luv/scalable/places
-    </IconPath>
-    <IconPath>
-      /usr/local/share/icons/Luv/scalable/status
-    </IconPath>
-    <IconPath>
-      /usr/local/share/icons/Luv/scalable/mimetypes
-    </IconPath>
 
     <!-- The resize mode (outline or opaque) -->
     <ResizeMode>opaque</ResizeMode>
