@@ -1,3 +1,6 @@
+# Default editor
+export EDITOR=nano
+
 # General
 alias ll='ls -alF'
 
