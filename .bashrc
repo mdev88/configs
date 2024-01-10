@@ -1,3 +1,18 @@
+#
+# ~/.bashrc
+#
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+alias X='startx'
+alias ls='ls --color=auto'
+alias grep='grep --color=auto'
+
+alias q3='quake3 +set cl_renderer "opengl1"'
+
+#PS1='[\u@\h \W]\$ '
+
 # Default editor
 export EDITOR=nano
 
@@ -6,10 +21,6 @@ alias ll='ls -alF'
 
 # Arch/Manjaro
 alias orphan='sudo pacman -Qtdq | sudo pacman -Rns -'
-
-# Flutter
-export PATH="$PATH:/home/user/flutter/bin"
-CHROME_EXECUTABLE="/usr/bin/chromium"
 
 # Git
 alias gitl='git log --pretty=oneline'
