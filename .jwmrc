@@ -15,7 +15,7 @@
         <Menu icon="folder" label="Applications">
             <Program icon="calc" label="Calculator">xcalc</Program>
             <Program icon="calc" label="Mousepad">mousepad</Program>
-            <Program icon="web-browser" label="Firefox">firefox</Program>
+            <Program icon="web-browser" label="Waterfox">waterfox</Program>
             <Program icon="system-file-manager" label="PCMan">pcmanfm</Program>
         </Menu>
         <Menu icon="folder" label="Utilities">
@@ -29,7 +29,6 @@
         </Menu>
         <Menu icon="folder" label="Config">
             <Program icon="folder" label="WifiMgr">wifimgr</Program>
-            <Program icon="folder" label="FreeBSD Handbook">surf /usr/local/share/doc/freebsd/en/books/handbook/index.html</Program>
         </Menu>
 
         <Separator/>
@@ -51,7 +50,7 @@
         <Option>notitle</Option>
     </Group>
     <Group>
-        <Class>Xfce4-terminal</Class>
+        <Class>mate-terminal</Class>
         <Option>maximized</Option>
     </Group>
     <Group>
@@ -60,23 +59,28 @@
     </Group>
 
     <!-- Tray at the bottom. -->
-    <Tray x="0" y="-1" autohide="off" delay="1000">
+    <Tray x="0" y="-1" autohide="off" delay="1000" >
 
         <TrayButton label="Apps">root:1</TrayButton>
+
         <Spacer width="2"/>
+
         <TrayButton label="Desk">showdesktop</TrayButton>
+
         <Spacer width="2"/>
 
-        <TaskList maxwidth="200"/>
-	<TaskListStyle group="false" />
-
-        <!-- <Swallow width="32" height="32" name="xclock">xclock</Swallow>-->
+        <TaskList maxwidth="200" />
 
         <Dock/>
+
         <TrayButton popup="Volumen" icon="/home/user/Images/mixer2.png">exec:xterm mixertui</TrayButton>
+
         <Clock format="%l:%M %p"><Button mask="123">exec:xclock</Button></Clock>
+
 	<Pager labeled="true"/>
     </Tray>
+
+    <TaskListStyle group="false" decorations="motif"/>
 
     <!-- Visual Styles -->
     <WindowStyle decorations="motif">
@@ -98,7 +102,7 @@
         <Foreground>#FFFFFF</Foreground>
         <Opacity>0.75</Opacity>
     </TrayStyle>
-    <TaskListStyle list="all" group="true">
+    <TaskListStyle list="all" group="false">
       <Font>Sans-12</Font>
       <Active>
         <Foreground>#FFFFFF</Foreground>
@@ -213,6 +217,10 @@
     <Key mask="A" key="Left">ldesktop</Key>
     <Key mask="A" key="Up">udesktop</Key>
     <Key mask="A" key="Down">ddesktop</Key>
+
+    <!-- AC = Alt+Ctrl-->
+    <Key mask="AC" key="t">exec: mate-terminal</Key> 
+
 
     <!-- Mouse bindings -->
     <Mouse context="root" button="4">ldesktop</Mouse>
