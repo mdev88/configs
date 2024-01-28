@@ -4,14 +4,12 @@
     <!-- The root menu. -->
     <RootMenu onroot="12">
 	<Program icon="utilities-terminal.svg" label="Mousepad">mousepad</Program>        
-        <Program icon="utilities-terminal.svg" label="Telegram">telegram-desktop</Program>
-        <Program icon="utilities-terminal.svg" label="Terminal">mate-terminal</Program>
 	<Program icon="system-file-manager" label="PCMan">pcmanfm</Program>
+        <Program icon="utilities-terminal.svg" label="Terminal">xfce4-terminal</Program>
 	<Program icon="web-browser" label="Waterfox">waterfox</Program>
 
         <Menu icon="folder" label="Applications">
             <Program icon="calc" label="Calculator">xcalc</Program>
-            <Program icon="utilities-terminal.svg" label="Terminal">mate-terminal</Program>
             <Program icon="calc" label="Mousepad">mousepad</Program>
             <Program icon="system-file-manager" label="PCMan">pcmanfm</Program>
         </Menu>
@@ -26,7 +24,7 @@
 	<Menu icon="folder" label="Internet">
             <Program icon="utilities-terminal.svg" label="Hexchat">hexchat</Program>
             <Program icon="utilities-terminal.svg" label="Lagrange">lagrange</Program>
-            <Program icon="utilities-terminal.svg" label="Telegram">telegram-desktop</Program>
+            <Program icon="utilities-terminal.svg" label="Telegram Desktop">telegram-desktop</Program>
             <Program icon="web-browser" label="Waterfox">waterfox</Program>
         </Menu>
         
@@ -50,7 +48,7 @@
         <Separator/>
         
         <Menu icon="folder" label="Config">
-            <Program icon="folder" label="nmtui">mate-terminal -e nmtui</Program>
+            <Program icon="folder" label="nmtui">xfce4-terminal -e nmtui</Program>
             <Program icon="folder" label="MATE Control Center">mate-control-center</Program>            
         </Menu>
 
@@ -74,7 +72,7 @@
         <Option>notitle</Option>
     </Group>
     <Group>
-        <Class>mate-terminal</Class>
+        <Class>Xfce4-terminal</Class>
         <Option>maximized</Option>
     </Group>
     <Group>
@@ -214,7 +212,7 @@
     <SnapMode distance="10">border</SnapMode>
 
     <!-- The move mode (outline or opaque) -->
-    <MoveMode>opaque</MoveMode>
+    <MoveMode>outline</MoveMode>
 
     <!-- The resize mode (outline or opaque) -->
     <ResizeMode>opaque</ResizeMode>
@@ -233,17 +231,17 @@
 
     <Key mask="A" key="Tab">nextstacked</Key>
     <Key mask="A" key="F4">close</Key>
-    <Key mask="A" key="#">desktop#</Key>
+    <!--<Key mask="A" key="#">desktop#</Key>-->
     <Key mask="A" key="F1">root:1</Key>
     <Key mask="A" key="F2">window</Key>
     <Key mask="A" key="F10">maximize</Key>
-    <Key mask="A" key="Right">rdesktop</Key>
-    <Key mask="A" key="Left">ldesktop</Key>
-    <Key mask="A" key="Up">udesktop</Key>
-    <Key mask="A" key="Down">ddesktop</Key>
+    <Key mask="AC" key="Right">rdesktop</Key>
+    <Key mask="AC" key="Left">ldesktop</Key>
+    <!--<Key mask="A" key="Up">udesktop</Key>-->
+    <!--<Key mask="A" key="Down">ddesktop</Key>-->
 
     <!-- AC = Alt+Ctrl-->
-    <Key mask="AC" key="t">exec: mate-terminal</Key> 
+    <Key mask="AC" key="t">exec: xfce4-terminal</Key> 
 
 
     <!-- Mouse bindings -->
