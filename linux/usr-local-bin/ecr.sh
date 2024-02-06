@@ -1,0 +1,1 @@
+/home/user/MEGAsync/Martin/Linux/usr-local-bin/ecr.sh
